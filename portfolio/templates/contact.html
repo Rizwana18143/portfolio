@@ -1,0 +1,280 @@
+{% extends 'index.html'%}
+{%block content%}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Contact | Mahammad Rizwana</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8fafc;
+            color: #334155;
+        }
+
+
+        /* CONTACT SECTION */
+
+        .contact-section {
+            min-height: 100vh;
+
+            padding: 80px 10%;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+
+        /* TITLE */
+
+        .section-title {
+            text-align: center;
+
+            margin-bottom: 50px;
+        }
+
+        .section-title p {
+            color: #2563eb;
+
+            font-size: 14px;
+
+            font-weight: bold;
+
+            letter-spacing: 2px;
+
+            margin-bottom: 10px;
+        }
+
+        .section-title h1 {
+            font-size: 42px;
+
+            color: #0f172a;
+
+            margin-bottom: 15px;
+        }
+
+        .section-title span {
+            color: #64748b;
+
+            font-size: 16px;
+        }
+
+
+        /* CONTACT CONTAINER */
+
+        .contact-container {
+            max-width: 1000px;
+
+            width: 100%;
+
+            margin: auto;
+
+            display: grid;
+
+            grid-template-columns: repeat(2, 1fr);
+
+            gap: 25px;
+        }
+
+
+        /* CONTACT CARD */
+
+        .contact-card {
+
+            background-color: white;
+
+            padding: 30px;
+
+            border-radius: 15px;
+
+            text-decoration: none;
+
+            box-shadow: 0 8px 25px rgba(15, 23, 42, 0.08);
+
+            border-left: 4px solid #2563eb;
+
+            transition: 0.3s;
+        }
+
+
+        .contact-card:hover {
+
+            transform: translateY(-5px);
+
+            box-shadow: 0 12px 30px rgba(15, 23, 42, 0.12);
+
+        }
+
+
+        /* CARD TITLE */
+
+        .contact-card h2 {
+
+            color: #0f172a;
+
+            font-size: 20px;
+
+            margin-bottom: 10px;
+
+        }
+
+
+        /* CARD INFORMATION */
+
+        .contact-card p {
+
+            color: #64748b;
+
+            font-size: 16px;
+
+            line-height: 1.6;
+
+            word-break: break-word;
+
+        }
+
+
+        /* MOBILE */
+
+        @media (max-width: 700px) {
+
+            .contact-section {
+
+                padding: 60px 5%;
+
+            }
+
+            .section-title h1 {
+
+                font-size: 32px;
+
+            }
+
+            .contact-container {
+
+                grid-template-columns: 1fr;
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- CONTACT SECTION -->
+
+    <section class="contact-section" id="contact">
+
+
+        <!-- TITLE -->
+
+        <div class="section-title">
+
+            <p>GET IN TOUCH</p>
+
+            <h1>Contact Me</h1>
+
+            <span>
+                Feel free to connect with me for opportunities,
+                projects, or professional discussions.
+            </span>
+
+        </div>
+
+
+        <!-- CONTACT INFORMATION -->
+
+        <div class="contact-container">
+
+
+            <!-- PHONE -->
+
+            <a href="tel:+919502874581"
+               class="contact-card">
+
+                <h2>Phone</h2>
+
+                <p>
+                    +91 9502874581
+                </p>
+
+            </a>
+
+
+            <!-- EMAIL -->
+
+            <a href="mailto:rizwanagosarapalli@gmail.com"
+               class="contact-card">
+
+                <h2>Email</h2>
+
+                <p>
+                    rizwanagosarapalli@gmail.com
+                </p>
+
+            </a>
+
+
+            <!-- LINKEDIN -->
+
+            <a href="https://www.linkedin.com/in/gosarapalli-rizwana"
+               target="_blank"
+               class="contact-card">
+
+                <h2>LinkedIn</h2>
+
+                <p>
+                    linkedin.com/in/gosarapalli-rizwana
+                </p>
+
+            </a>
+
+
+            <!-- GITHUB -->
+
+            <a href="https://github.com/Rizwana18143"
+               target="_blank"
+               class="contact-card">
+
+                <h2>GitHub</h2>
+
+                <p>
+                    github.com/Rizwana18143
+                </p>
+
+            </a>
+
+
+        </div>
+
+    </section>
+
+
+</body>
+
+</html>
+{%endblock content%}

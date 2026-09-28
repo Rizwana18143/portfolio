@@ -1,0 +1,397 @@
+{%extends 'index.html'%}
+{%block content%}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Projects | Mahammad Rizwana</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8fafc;
+            color: #334155;
+        }
+
+
+        /* PROJECT SECTION */
+
+        .projects-section {
+            min-height: 100vh;
+            padding: 80px 10%;
+        }
+
+
+        /* SECTION TITLE */
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-title p {
+            color: #2563eb;
+            font-size: 14px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+
+        .section-title h1 {
+            font-size: 42px;
+            color: #0f172a;
+            margin-bottom: 15px;
+        }
+
+        .section-title span {
+            color: #64748b;
+            font-size: 16px;
+        }
+
+
+        /* PROJECT CARD */
+
+        .project-card {
+            max-width: 900px;
+            margin: 0 auto 40px auto;
+
+            background-color: white;
+
+            padding: 40px;
+
+            border-radius: 18px;
+
+            border-top: 5px solid #2563eb;
+
+            box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+
+            transition: 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+
+            box-shadow: 0 15px 35px rgba(15, 23, 42, 0.12);
+        }
+
+
+        /* PROJECT NUMBER */
+
+        .project-number {
+            color: #2563eb;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 12px;
+        }
+
+
+        /* PROJECT TITLE */
+
+        .project-card h2 {
+            color: #0f172a;
+            font-size: 30px;
+            line-height: 1.3;
+            margin-bottom: 20px;
+        }
+
+
+        /* DESCRIPTION */
+
+        .project-description {
+            color: #475569;
+            font-size: 17px;
+            line-height: 1.8;
+            margin-bottom: 30px;
+        }
+
+
+        /* HEADINGS */
+
+        .project-card h3 {
+            color: #0f172a;
+            font-size: 20px;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+
+
+        /* PROJECT LIST */
+
+        .project-card ul {
+            padding-left: 25px;
+            margin-bottom: 30px;
+        }
+
+        .project-card li {
+            color: #475569;
+            line-height: 1.7;
+            margin-bottom: 12px;
+        }
+
+
+        /* TECHNOLOGIES */
+
+        .technologies {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .technologies span {
+            background-color: #eff6ff;
+            color: #2563eb;
+
+            padding: 8px 16px;
+
+            border-radius: 20px;
+
+            font-size: 14px;
+
+            font-weight: bold;
+        }
+
+
+        /* MOBILE RESPONSIVE */
+
+        @media (max-width: 768px) {
+
+            .projects-section {
+                padding: 60px 5%;
+            }
+
+            .section-title h1 {
+                font-size: 32px;
+            }
+
+            .project-card {
+                padding: 25px;
+            }
+
+            .project-card h2 {
+                font-size: 25px;
+            }
+
+            .project-description {
+                font-size: 16px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- PROJECTS SECTION -->
+
+    <section class="projects-section" id="projects">
+
+
+        <!-- SECTION TITLE -->
+
+        <div class="section-title">
+
+            <p>MY WORK</p>
+
+            <h1>My Projects</h1>
+
+            <span>
+                Here are some of the projects I have worked on.
+            </span>
+
+        </div>
+
+
+
+        <!-- ============================= -->
+        <!-- PROJECT 01 -->
+        <!-- ============================= -->
+
+        <div class="project-card">
+
+            <p class="project-number">
+                PROJECT 01
+            </p>
+
+
+            <h2>
+                Water Quality Analytics Using Machine Learning
+            </h2>
+
+
+            <p class="project-description">
+
+                Developed a machine learning application to classify
+                water as potable or non-potable based on water quality
+                parameters.
+
+            </p>
+
+
+            <h3>Key Features</h3>
+
+
+            <ul>
+
+                <li>
+                    Developed a machine learning application to classify
+                    water as potable or non-potable.
+                </li>
+
+                <li>
+                    Applied SMOTE to handle class imbalance.
+                </li>
+
+                <li>
+                    Used CatBoost, XGBoost, and LightGBM models.
+                </li>
+
+                <li>
+                    Combined the models using a Soft Voting Ensemble
+                    approach.
+                </li>
+
+                <li>
+                    Built a Flask-based web application for real-time
+                    prediction.
+                </li>
+
+            </ul>
+
+
+            <h3>Technologies Used</h3>
+
+
+            <div class="technologies">
+
+                <span>Python</span>
+
+                <span>Machine Learning</span>
+
+                <span>CatBoost</span>
+
+                <span>XGBoost</span>
+
+                <span>LightGBM</span>
+
+                <span>Flask</span>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- ============================= -->
+        <!-- PROJECT 02 -->
+        <!-- ============================= -->
+
+        <div class="project-card">
+
+            <p class="project-number">
+                PROJECT 02
+            </p>
+
+
+            <h2>
+                Job Portal & Recruitment Management System
+            </h2>
+
+
+            <p class="project-description">
+
+                Developed a web-based recruitment platform using
+                Python and Django to connect job seekers and recruiters.
+                The system provides features for job posting, job
+                searching, and online job applications.
+
+            </p>
+
+
+            <h3>Key Features</h3>
+
+
+            <ul>
+
+                <li>
+                    Implemented user authentication for job seekers
+                    and recruiters.
+                </li>
+
+                <li>
+                    Developed job posting and job search functionality.
+                </li>
+
+                <li>
+                    Implemented online job application functionality.
+                </li>
+
+                <li>
+                    Used Django ORM and MySQL to manage users,
+                    job listings, applications, and recruitment data.
+                </li>
+
+                <li>
+                    Implemented role-based access for job seekers
+                    and recruiters.
+                </li>
+
+                <li>
+                    Designed dynamic web pages using Django Templates,
+                    HTML, CSS, and JavaScript.
+                </li>
+
+            </ul>
+
+
+            <h3>Technologies Used</h3>
+
+
+            <div class="technologies">
+
+                <span>Python</span>
+
+                <span>Django</span>
+
+                <span>MySQL</span>
+
+                <span>HTML</span>
+
+                <span>CSS</span>
+
+                <span>JavaScript</span>
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+</body>
+
+</html>
+
+{%endblock content%}

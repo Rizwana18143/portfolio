@@ -1,0 +1,464 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block content %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Mahammad Rizwana | Portfolio</title>
+    <link rel="stylesheet" href="{% static 'css/body.css' %}">
+
+    <style>
+
+        /* =========================
+           BASIC RESET
+        ========================= */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8fafc;
+            color: #334155;
+        }
+
+
+        /* =========================
+           HOME SECTION
+        ========================= */
+
+        .home {
+            min-height: 100vh;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: space-between;
+
+            padding: 80px 10%;
+
+            gap: 60px;
+        }
+
+
+        /* =========================
+           LEFT CONTENT
+        ========================= */
+
+        .home-content {
+            max-width: 650px;
+        }
+
+
+        .welcome {
+            color: #2563eb;
+
+            font-size: 18px;
+
+            font-weight: bold;
+
+            margin-bottom: 12px;
+        }
+
+
+        .home-content h1 {
+            color: #0f172a;
+
+            font-size: 52px;
+
+            line-height: 1.2;
+
+            margin-bottom: 15px;
+        }
+
+
+        .home-content h2 {
+            color: #2563eb;
+
+            font-size: 28px;
+
+            margin-bottom: 10px;
+        }
+
+
+        .role {
+            color: #475569;
+
+            font-size: 21px;
+
+            font-weight: 500;
+
+            margin-bottom: 25px;
+        }
+
+
+        .description {
+            color: #64748b;
+
+            font-size: 17px;
+
+            line-height: 1.8;
+
+            margin-bottom: 30px;
+
+            max-width: 600px;
+        }
+
+
+        /* =========================
+           BUTTONS
+        ========================= */
+
+        .home-buttons {
+            display: flex;
+
+            gap: 15px;
+
+            flex-wrap: wrap;
+        }
+
+
+        .btn {
+            display: inline-block;
+
+            padding: 13px 25px;
+
+            border-radius: 8px;
+
+            text-decoration: none;
+
+            font-size: 15px;
+
+            font-weight: bold;
+
+            transition: 0.3s;
+        }
+
+
+        .primary-btn {
+            background-color: #2563eb;
+
+            color: white;
+        }
+
+
+        .primary-btn:hover {
+            background-color: #1d4ed8;
+
+            transform: translateY(-2px);
+        }
+
+
+        .secondary-btn {
+            background-color: white;
+
+            color: #2563eb;
+
+            border: 2px solid #2563eb;
+        }
+
+
+        .secondary-btn:hover {
+            background-color: #2563eb;
+
+            color: white;
+
+            transform: translateY(-2px);
+        }
+
+
+        /* =========================
+           IMAGE
+        ========================= */
+
+        .home-image {
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+        }
+
+
+        .home-image img {
+            width: 320px;
+
+            height: 320px;
+
+            object-fit: cover;
+
+            border-radius: 50%;
+
+            border: 7px solid white;
+
+            box-shadow:
+                0 15px 40px rgba(15, 23, 42, 0.15);
+
+            transition: 0.3s;
+        }
+
+
+        .home-image img:hover {
+            transform: scale(1.03);
+        }
+
+
+        /* =========================
+           QUICK INFORMATION
+        ========================= */
+
+        .quick-info {
+            display: flex;
+
+            gap: 25px;
+
+            margin-top: 30px;
+
+            flex-wrap: wrap;
+        }
+
+
+        .info-item {
+            color: #64748b;
+
+            font-size: 14px;
+        }
+
+
+        .info-item strong {
+            display: block;
+
+            color: #0f172a;
+
+            font-size: 15px;
+
+            margin-bottom: 4px;
+        }
+
+
+        /* =========================
+           MOBILE RESPONSIVE
+        ========================= */
+
+        @media (max-width: 850px) {
+
+            .home {
+                flex-direction: column-reverse;
+
+                text-align: center;
+
+                padding: 60px 5%;
+
+                gap: 40px;
+            }
+
+
+            .home-content {
+                max-width: 100%;
+            }
+
+
+            .home-content h1 {
+                font-size: 40px;
+            }
+
+
+            .home-content h2 {
+                font-size: 24px;
+            }
+
+
+            .role {
+                font-size: 18px;
+            }
+
+
+            .description {
+                font-size: 16px;
+
+                margin-left: auto;
+
+                margin-right: auto;
+            }
+
+
+            .home-buttons {
+                justify-content: center;
+            }
+
+
+            .quick-info {
+                justify-content: center;
+            }
+
+
+            .home-image img {
+                width: 230px;
+
+                height: 230px;
+            }
+
+        }
+
+
+        /* =========================
+           SMALL MOBILE
+        ========================= */
+
+        @media (max-width: 450px) {
+
+            .home-content h1 {
+                font-size: 32px;
+            }
+
+
+            .home-content h2 {
+                font-size: 21px;
+            }
+
+
+            .home-image img {
+                width: 200px;
+
+                height: 200px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         HOME SECTION
+    ========================= -->
+
+    <section class="home" id="home">
+
+
+        <!-- LEFT SIDE -->
+
+        <div class="home-content">
+
+            <p class="welcome">
+                Hello, I'm
+            </p>
+
+
+            <h1>
+                MAHAMMAD RIZWANA
+            </h1>
+
+
+            <h2>
+                Aspiring Python & Django Developer
+            </h2>
+
+
+            <p class="role">
+                Computer Science Graduate
+            </p>
+
+
+            <p class="description">
+
+                I am a Computer Science graduate currently learning
+                Python, Django, HTML and CSS. I enjoy building
+                practical web applications and continuously improving
+                my development skills.
+
+            </p>
+
+
+            <!-- BUTTONS -->
+
+            <div class="home-buttons">
+
+                <a href="{% url 'project' %}" class="btn primary-btn">
+                View Projects
+                </a>
+
+                <a href="{% url 'contact' %}" class="btn secondary-btn">
+                Contact Me
+                </a>
+
+            </div>
+
+
+            <!-- QUICK INFORMATION -->
+
+            <div class="quick-info">
+
+                <div class="info-item">
+
+                    <strong>Education</strong>
+
+                    B.Tech CSE
+
+                </div>
+
+
+                <div class="info-item">
+
+                    <strong>Learning</strong>
+
+                    Python & Django
+
+                </div>
+
+
+                <div class="info-item">
+
+                    <strong>Interest</strong>
+
+                    Python Fullstack developer
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- RIGHT SIDE IMAGE -->
+
+        <div class="home-image">
+
+            <img
+                src="{% static 'images/pic.jpeg' %}"
+                alt="Mahammad Rizwana"
+            >
+
+        </div>
+
+
+    </section>
+
+
+</body>
+
+</html>
+{%endblock content%}

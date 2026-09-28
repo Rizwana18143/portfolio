@@ -1,0 +1,288 @@
+{%extends 'index.html'%}
+{%block content%}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Skills | Mahammad Rizwana</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8fafc;
+            color: #334155;
+        }
+
+        /* SKILLS SECTION */
+
+        .skills-section {
+            min-height: 100vh;
+            padding: 80px 10%;
+        }
+
+        /* TITLE */
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-title p {
+            color: #2563eb;
+            font-size: 14px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+
+        .section-title h1 {
+            font-size: 42px;
+            color: #0f172a;
+            margin-bottom: 15px;
+        }
+
+        .section-title span {
+            color: #64748b;
+            font-size: 16px;
+        }
+
+        /* SKILLS CONTAINER */
+
+        .skills-container {
+            max-width: 1000px;
+            margin: auto;
+
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+
+        /* SKILL CARD */
+
+        .skill-card {
+            background-color: white;
+
+            padding: 30px;
+
+            border-radius: 15px;
+
+            box-shadow: 0 8px 25px rgba(15, 23, 42, 0.08);
+
+            border-left: 4px solid #2563eb;
+
+            transition: 0.3s;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-5px);
+
+            box-shadow: 0 12px 30px rgba(15, 23, 42, 0.12);
+        }
+
+        .skill-card h2 {
+            color: #0f172a;
+            font-size: 21px;
+            margin-bottom: 20px;
+        }
+
+        /* SKILL TAGS */
+
+        .skill-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill {
+            background-color: #eff6ff;
+
+            color: #2563eb;
+
+            padding: 8px 15px;
+
+            border-radius: 20px;
+
+            font-size: 14px;
+
+            font-weight: bold;
+        }
+
+        /* MOBILE */
+
+        @media (max-width: 700px) {
+
+            .skills-section {
+                padding: 60px 5%;
+            }
+
+            .section-title h1 {
+                font-size: 32px;
+            }
+
+            .skills-container {
+                grid-template-columns: 1fr;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- SKILLS SECTION -->
+
+    <section class="skills-section" id="skills">
+
+
+        <!-- TITLE -->
+
+        <div class="section-title">
+
+            <p>WHAT I KNOW</p>
+
+            <h1>Technical Skills</h1>
+
+            <span>
+                Technologies and skills I am learning and working with.
+            </span>
+
+        </div>
+
+
+        <!-- SKILLS -->
+
+        <div class="skills-container">
+
+
+            <!-- PROGRAMMING -->
+
+            <div class="skill-card">
+
+                <h2>Programming</h2>
+
+                <div class="skill-list">
+
+                    <span class="skill">Python</span>
+
+                </div>
+
+            </div>
+
+
+            <!-- WEB TECHNOLOGIES -->
+
+            <div class="skill-card">
+
+                <h2>Web Technologies</h2>
+
+                <div class="skill-list">
+
+                    <span class="skill">HTML</span>
+
+                    <span class="skill">CSS</span>
+
+                    <span class="skill">JavaScript</span>
+
+                </div>
+
+            </div>
+
+
+            <!-- FRAMEWORK -->
+
+            <div class="skill-card">
+
+                <h2>Framework</h2>
+
+                <div class="skill-list">
+
+                    <span class="skill">Django</span>
+
+                </div>
+
+            </div>
+
+
+            <!-- DATABASE -->
+
+            <div class="skill-card">
+
+                <h2>Database</h2>
+
+                <div class="skill-list">
+
+                    <span class="skill">SQL</span>
+
+                    <span class="skill">MySQL</span>
+
+                </div>
+
+            </div>
+
+
+            <!-- CONCEPTS -->
+
+            <div class="skill-card">
+
+                <h2>Concepts</h2>
+
+                <div class="skill-list">
+
+                    <span class="skill">OOP</span>
+
+                    <span class="skill">Machine Learning</span>
+
+                </div>
+
+            </div>
+
+
+            <!-- SOFT SKILLS -->
+
+            <div class="skill-card">
+
+                <h2>Soft Skills</h2>
+
+                <div class="skill-list">
+
+                    <span class="skill">Communication</span>
+
+                    <span class="skill">Adaptability</span>
+
+                    <span class="skill">Time Management</span>
+
+                    <span class="skill">Leadership</span>
+
+                    <span class="skill">Teamwork</span>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+</body>
+
+</html>
+{%endblock content%}
